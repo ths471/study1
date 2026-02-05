@@ -24,6 +24,7 @@ body {
     margin: 0;
     transition: background-color 0.3s, color 0.3s;
     color: var(--text-color);
+    padding-top: 60px; /* Add padding to body to avoid content being hidden by nav */
 }
 
 .container {
@@ -146,3 +147,69 @@ input:checked + .slider:before {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--container-bg-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: var(--background-color);
+}
+
+.content-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: left;
+}
+
+.content-section h2 {
+    margin-bottom: 15px;
+}
+
+.content-section ul {
+    padding-left: 20px;
+}
+
+.content-section ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+    font-size: 0.9em;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
